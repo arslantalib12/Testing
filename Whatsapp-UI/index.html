@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CONTACTS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+    }
+    .container {
+        width: 100%;
+        margin: auto;
+    }
+    .chat {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background: #f1f0e8;
+    }
+    .chat-header {
+        display: flex;
+        cursor: pointer;
+        background: #036055;
+    }
+    .profile {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        height: 60px;
+        padding: 0px 10px;
+        position: relative;
+    }
+    .profile .left {
+        flex: 1;
+    }
+    .right .icon {
+        display: inline-block;
+        width: 25px;
+        margin-left: 10px;
+    }
+    .profile h2 {
+        display: inline-block;
+        line-height: 60px;
+        vertical-align: bottom;
+        color: #fff;
+        font-size: 20px;
+    }
+    .contact {
+        width: 100%;
+        height: 70px;
+        background: #f1f0e8;
+    }
+    .contact .pp{
+        width: 50px;
+        display: inline-block;
+        border-radius: 50%;
+        margin-left: 10px;
+        margin-bottom: 8px;
+    }
+    .contact h2 {
+        display: inline-block;
+        line-height: 60px;
+        vertical-align: bottom;
+        margin-left: 10px;
+        color: #000;
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+    .contact span {
+        color: #000;
+        font-size: 14px;
+    }
+    .check-2 {
+        width: 20px;
+    }
+    .text{
+        display: flex;
+        position: absolute;
+        left: 73px;
+        margin-top: -30px;  
+    }
+    .user {
+        flex: 1;
+    }
+    .contact-footer{
+        background: #036055;
+        margin-bottom: 0px;
+        display: block;
+    }
+
+    .phone{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .phone_content{
+        filter: contrast(20);
+        width: 100%;
+        background-color: #fff;
+        overflow: hidden;
+        position: absolute;
+    }
+    .phone_bottom{
+        width: 100%;
+        height: 66px;
+        background: #000;
+        display: flex;
+        justify-content: center;
+        filter: blur(10px);
+    }
+
+    label{
+        cursor: pointer;
+        display: flex;
+        width: 33%;
+        height: 66px;
+        position: relative;
+        z-index: 2;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+    }
+    label a{
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .circle{
+        width: 60px;
+        height: 60px;
+        background-image: linear-gradient(45deg, #33ccff 0%, #66ff66 100%);
+        position: absolute;
+        top: -40px;
+        z-index: 1;
+        border-radius: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .indicator{
+        width: 70px;
+        height: 70px;
+        background-color: #fff;
+        background-size: cover;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: -42px;
+        right: 0;
+        margin: auto;
+    }
+
+    hr {
+        margin-left: 4%;
+        margin-right: 2%;
+    }
+    </style>
+</head>
+<body>
+	<div class="container">
+		<div class="chat">
+			<div class="chat-header">
+				<div class="profile">
+					<div class="left">
+						<h2>Green Chat</h2>
+					</div>
+					<div class="right">
+                        <img src="img/search.png" class="icon">
+						<img src="img/more.png" class="icon">
+					</div>
+				</div>
+			</div>
+            <div class="user">
+            <div class="contact">
+				<img src="img/pp.png" class="pp">
+				<h2>Muhammad Arslan</h2>
+                <div class="text"> 
+                <img src="img/check-2.png" class="check-2">
+				<span>Hi</span>
+                </div>
+            </div>
+            <hr>
+            <div class="contact">
+				<img src="img/pp.png" class="pp">
+				<h2>ALi Raza</h2>
+                <div class="text">
+                <img src="img/grey-check2.png" class="check-2">
+				<span>how are you?</span>
+                </div>
+            </div>
+            <hr>
+            <div class="contact">
+				<img src="img/pp.png" class="pp">
+				<h2>Ahmed Ali</h2>
+                <div class="text">
+                <img src="img/grey-check.png" class="check-2">
+				<span>?</span>
+                </div>
+            </div>
+            <hr>
+            <div class="contact">
+				<img src="img/pp.png" class="pp">
+				<h2>Ahmed Ali</h2>
+                <div class="text">
+				<span>ok good</span>
+                </div>
+            </div>
+            <hr>
+            <div class="contact">
+				<img src="img/pp.png" class="pp">
+				<h2>ALi Raza</h2>
+                <div class="text">
+                <img src="img/grey-check2.png" class="check-2">
+				<span>how are you?</span>
+                </div>
+            </div>
+            </div>
+                <div class="phone">
+                    <label><a href="chat.html">Chat</a></label>
+                    <label style="margin-top: -85px;"><a href="my-apps.html">APPS</a></label>
+                    <label>Call</label>
+
+                    <div class="circle"></div>
+                    <div class="phone_content">
+                        <div class="phone_bottom">
+                        <span class="indicator"></span>
+                        </div>
+                    </div>
+                </div>      
+			</div>
+            </div>
+    
+</body>
+</html>
